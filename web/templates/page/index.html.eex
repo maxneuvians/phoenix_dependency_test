@@ -1,0 +1,12 @@
+<table class="table">
+  <tbody>
+    <tr>
+      <th> Running as dependency? </th>
+      <td><%= if @conn.assigns[:mount_path] == nil, do: "No", else: "Yes" %></td>
+    </tr>
+    <tr>
+      <th> Connected to dependent socket? </th>
+      <td id="socket_test">Fail</td>
+    </tr>
+  </tbody>
+</table>
