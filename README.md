@@ -35,7 +35,8 @@ end
 
 The last thing you need to do is include the following at inside your `lib/my_app/endpoint.ex`:
 
-```defmodule MyApp.Endpoint do
+```
+defmodule MyApp.Endpoint do
   use Phoenix.Endpoint, otp_app: :main
   use PhoenixDependencyTest.Mount, path: "/test"
 ```
