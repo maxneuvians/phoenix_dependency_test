@@ -11,6 +11,7 @@ defmodule PhoenixDependencyTest.Plug.Mount do
         [String.replace(path, "/", "")],
         PhoenixDependencyTest.Endpoint,
         [])
+      |> halt
     else
       conn
     end

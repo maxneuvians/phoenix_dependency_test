@@ -33,7 +33,8 @@ def application do
 end
 ```
 
-The last thing you need to do is include the following at inside your `lib/my_app/endpoint.ex`:
+The last thing you need to do is include `use PhoenixDependencyTest.Mount, path: "/test"`
+at the top of your `lib/my_app/endpoint.ex`:
 
 ```
 defmodule MyApp.Endpoint do
